@@ -14,6 +14,7 @@ env:
 services: 
  - elasticsearch
  
+ 
 install: pip install --use-mirrors -r requirements.txt
 
 script:
@@ -22,3 +23,6 @@ script:
  - echo $key3
  - echo $foo and $bar and $test
  - python sample.py
+ 
+ 
+ 
