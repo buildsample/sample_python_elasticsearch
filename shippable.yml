@@ -7,6 +7,10 @@ env:
  global:
    - secure: E0V8MO8/ka5KfULl3QCcfFbu3LPNBGO0Ez+97e4j3MS4esScXt23i4bPFjPtwpZSy3YP+4znJM2aCHmaDV8xrtHDZ8EqC7UPZjCDjFWHNa/MEAveh22k8p7+1wzWwrlHIQTHJM1CdNEaa451cPaidvv1vsLZCk+V5LBCOxIDg3vMlFd4Pq9n5rwq3iBs+YNADeGCILCdNyJSIztgs2yF7KdIWKG5DzHtas1N1AVwEW7yXYWRAHE7ashc5oJjDj2XhD/GGqAT1h18SM/PTPDKZz+ohwOii+gZNKxSWD/y0skUx8WENHRO/GfpW/WZP1WYPJ6VucaLpyxmCzTWWtQw0w==
    - secure: IkuiY7JcMnfGesmWBn2KiO9UNJlIVb/aQIDsSR6V30hzSKNsLTwl2dzyhzyu0STu1PnNAfVSRoxRprxVG8qxwUtYgi92hcvkUdqSqVajluT37dLzJW0WrausZShrwtVOpPXmsrtxnZQ2yMzMXr0rQbvYoI2jSMyyKPqzbKDm/jyHcIeKnDGIkYgc+RqL1SD4kiKH4yI3yExh6f/REPlnD3+QYouhupLylJsqpcakE4airONWmSMgMLVDsH82wEsk+SYrJFyepkpRq8+Ho5eKnCHZsycFk1HdCgqNMH0CetWZuzN1COtNHBevIIz16XRSN8KjhlefxDe3LPWzlEDWBQ==
+ matrix:
+   - foo="this is a env variable"
+   - bar=env-test 
+   - test=env yes
 services: 
  - elasticsearch
  
@@ -16,4 +20,5 @@ script:
  - echo $key1
  - echo $key2
  - echo $key3
+ - echo $foo and $bar and $test
  - python sample.py
