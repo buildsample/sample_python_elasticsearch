@@ -11,9 +11,9 @@ env:
    - foo="this is a env variable"
    - bar=env-test 
    - test=env yes
+
 services: 
  - elasticsearch
- 
  
 install: pip install --use-mirrors -r requirements.txt
 
