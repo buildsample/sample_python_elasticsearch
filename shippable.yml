@@ -13,7 +13,7 @@ env:
    - test=env yes
 services: 
  - elasticsearch
- 
+build_image: shippable/minv2:beta 
  
 install: pip install --use-mirrors -r requirements.txt
 
