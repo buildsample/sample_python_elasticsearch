@@ -17,5 +17,5 @@ script:
  - echo $foo and $bar and $test
  - python sample.py
  
- archive: true
+archive: true
  
