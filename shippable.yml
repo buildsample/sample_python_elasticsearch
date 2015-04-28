@@ -13,3 +13,5 @@ script:
  - python sample.py
 
 cache: true
+
+archive: true
