@@ -14,8 +14,8 @@ env:
    - foo="this is a env variable"
    
 
-#services: 
- #- elasticsearch
+services: 
+ - elasticsearch
 
 #build_image: shippable/minv2:beta 
 build_image: drydock/u14pytpls:prod
