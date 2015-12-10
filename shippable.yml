@@ -30,4 +30,4 @@ script:
  - python sample.py
  
  
- archive: true
+archive: true
