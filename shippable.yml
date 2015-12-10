@@ -17,6 +17,7 @@ env:
 
 #build_image: shippable/minv2:beta 
 build_image: drydock/u14pytpls:prod
+
 install: pip install --use-mirrors -r requirements.txt
 
 script:
@@ -27,4 +28,4 @@ script:
  - python sample.py
  
  
- 
+ archive: true
