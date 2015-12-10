@@ -1,10 +1,10 @@
 language: python
 
 python:
- #- "2.7"
- #- "2.6"
- - "3.3"
- - "3.4"
+ - "2.7"
+ - "2.6"
+ #- "3.3"
+ #- "3.4"
 
 env:
  global:
@@ -18,7 +18,7 @@ services:
  - elasticsearch
 
 #build_image: shippable/minv2:beta 
-#build_image: drydock/u14pytpls:prod
+build_image: drydock/u14pytpls:prod
 
 install: pip install -r requirements.txt
 
