@@ -10,14 +10,13 @@ env:
    - secure: IkuiY7JcMnfGesmWBn2KiO9UNJlIVb/aQIDsSR6V30hzSKNsLTwl2dzyhzyu0STu1PnNAfVSRoxRprxVG8qxwUtYgi92hcvkUdqSqVajluT37dLzJW0WrausZShrwtVOpPXmsrtxnZQ2yMzMXr0rQbvYoI2jSMyyKPqzbKDm/jyHcIeKnDGIkYgc+RqL1SD4kiKH4yI3yExh6f/REPlnD3+QYouhupLylJsqpcakE4airONWmSMgMLVDsH82wEsk+SYrJFyepkpRq8+Ho5eKnCHZsycFk1HdCgqNMH0CetWZuzN1COtNHBevIIz16XRSN8KjhlefxDe3LPWzlEDWBQ==
  matrix:
    - foo="this is a env variable"
-   - bar=env-test 
-   - test=env yes
+   
 
-services: 
- - elasticsearch
+#services: 
+ #- elasticsearch
 
 #build_image: shippable/minv2:beta 
- 
+build_image: drydock/u14pytpls:prod
 install: pip install --use-mirrors -r requirements.txt
 
 script:
