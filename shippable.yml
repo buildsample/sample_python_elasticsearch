@@ -16,7 +16,7 @@ env:
 services: 
  - elasticsearch
 
-#build_image: shippable/minv2:beta 
+build_image: drydock/u12pytall:tip
  
 install: pip install --use-mirrors -r requirements.txt
 
